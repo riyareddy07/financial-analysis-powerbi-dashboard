@@ -160,8 +160,7 @@ CALCULATE(
 2. ** Open** `Financial Analysis.pbix` in Power BI.  
 3. ** Interact** with the dashboard using filters to explore insights.  
 4. ** Analyze** sales trends, profit margins, and order distributions.  
-![![image](https://user-images.githubusercontent.com/97775044/215146486-101d3195-4313-4c29-b88e-b8758d513911.png)
-](https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/Finanace%20new.pdf)
+
 ---
 
 ##  Conclusion
