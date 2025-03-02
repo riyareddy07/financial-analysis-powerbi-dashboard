@@ -30,7 +30,7 @@ To ensure data quality and accurate analysis, the following preprocessing steps 
 
 ###  Sales & Orders Analysis
 - ** Orders by Country:** U.S., France, and Canada have the highest order volumes.
-- ![Animals: For Sheep’s and Goats categories both Canada have 15 distinct and 10 unique values and World has 14 distinct and 11 unique value.![image](https://user-images.githubusercontent.com/97775044/215146486-101d3195-4313-4c29-b88e-b8758d513911.png)
+- ![![image](https://user-images.githubusercontent.com/97775044/215146486-101d3195-4313-4c29-b88e-b8758d513911.png)
 ](https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/F-1.png)
 
 - ** Discount Trends:** High discount levels (57.8%) impact profitability.
