@@ -42,12 +42,15 @@ To ensure data quality and accurate analysis, the following preprocessing steps 
   1. ** Paseo** - **$33,011.1K**
   2. ** VTT** - **$20,511.9K**
   3. ** Velo** - **$18,250.1K**
+  ![![image](https://user-images.githubusercontent.com/97775044/215146486-101d3195-4313-4c29-b88e-b8758d513911.png)
+](https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/F-6.png)
 
 - ** Profitability by Customer Segment:**
   - ** Channel Partners:** Highest profit margins (**73.68%**)
   - ** Midmarket:** Moderate profitability (**28.90%**)
   - ** Enterprise:** Negative margins (-3.1% to -6.95%)
-
+  ![![image](https://user-images.githubusercontent.com/97775044/215146486-101d3195-4313-4c29-b88e-b8758d513911.png)
+](https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/F-5.png)
 ---
 
 ## Data Analytics Methods
@@ -59,8 +62,8 @@ To ensure data quality and accurate analysis, the following preprocessing steps 
 ####  DAX Calculation for Anomaly Detection
 ```DAX
 Anomaly Detection = 
-VAR MeanSales = AVERAGE('Financial Sample'[Sales Amount])
-VAR StdDevSales = STDEV.P('Financial Sample'[Sales Amount])
+VAR MeanSales = AVERAGE('Financials'[Sales Amount])
+VAR StdDevSales = STDEV.P('Financials'[Sales Amount])
 VAR UpperBound = MeanSales + (2 * StdDevSales)
 VAR LowerBound = MeanSales - (2 * StdDevSales)
 RETURN 
@@ -88,16 +91,16 @@ To enable **data-driven decision-making** by tracking financial performance tren
 ####  DAX Calculations for Key Metrics
 #####  Total Sales Calculation
 ```DAX
-Total Sales = SUM('Financial Sample'[Sales Amount])
+Sales Amount = SUM(Financials[Sales Amount])
 ```
 ##### Profit Margin Calculation
 ```DAX
-Profit Margin = DIVIDE([Total Profit], [Total Sales], 0)
+Profit Margin = DIVIDE([Profit], [Sales Amount])*100
 ```
 #####  Discount Impact Analysis
 ```DAX
 Discount Effect = 
-VAR AvgDiscount = AVERAGE('Financial Sample'[Discount])
+VAR AvgDiscount = AVERAGE('Financials'[Discount])
 RETURN 
     IF(AvgDiscount > 0.2, "High Discount Impact", "Low Discount Impact")
 ```
@@ -110,27 +113,27 @@ RETURN
 #####  Year-over-Year (YoY) Sales Growth
 ```DAX
 YoY Sales Growth = 
-VAR PriorYearSales = CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Date'[Date]))
+VAR PriorYearSales = CALCULATE([Sales Amount], SAMEPERIODLASTYEAR('Date'[Date]))
 RETURN 
-    DIVIDE([Total Sales] - PriorYearSales, PriorYearSales, 0)
+    DIVIDE([Sales Amount] - PriorYearSales, PriorYearSales, 0)
 ```
 #####  Month-to-Date (MTD) Sales
 ```DAX
-Sales MTD = TOTALMTD([Total Sales], 'Date'[Date])
+Sales MTD = TOTALMTD([Sales Amount], 'Date'[Date])
 ```
 ##### Quarter-to-Date (QTD) Sales
 ```DAX
-Sales QTD = TOTALQTD([Total Sales], 'Date'[Date])
+Sales QTD = TOTALQTD([Sales Amount], 'Date'[Date])
 ```
 #####  Year-to-Date (YTD) Sales
 ```DAX
-Sales YTD = TOTALYTD([Total Sales], 'Date'[Date])
+Sales YTD = TOTALYTD([Sales Amount], 'Date'[Date])
 ```
 ##### Cumulative Sales Over Time
 ```DAX
 Cumulative Sales = 
 CALCULATE(
-    [Total Sales],
+    [Sales Amount],
     FILTER(
         ALL('Date'),
         'Date'[Date] <= MAX('Date'[Date])
