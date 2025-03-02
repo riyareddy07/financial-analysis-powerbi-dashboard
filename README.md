@@ -30,7 +30,7 @@ To ensure data quality and accurate analysis, the following preprocessing steps 
 
 ###  Sales & Orders Analysis
 - ** Orders by Country:** U.S., France, and Canada have the highest order volumes.
-  https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/F1.png)
+[  https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/F1.png)](https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/F-1.png)
 - ** Discount Trends:** High discount levels (57.8%) impact profitability.
 
 ###  Product & Segment Performance
