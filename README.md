@@ -152,6 +152,7 @@ CALCULATE(
 **Segment-wise Profitability Reports** to evaluate business impact.  
 **DAX Calculations & Time Intelligence** for enhanced analytics.  
 
+
 ---
 
 ##  How to Use
@@ -159,18 +160,13 @@ CALCULATE(
 2. ** Open** `Financial Analysis.pbix` in Power BI.  
 3. ** Interact** with the dashboard using filters to explore insights.  
 4. ** Analyze** sales trends, profit margins, and order distributions.  
-
+![![image](https://user-images.githubusercontent.com/97775044/215146486-101d3195-4313-4c29-b88e-b8758d513911.png)
+](
 ---
 
 ##  Conclusion
 This **Power BI dashboard** provides deep insights into **financial trends, sales performance, and discount impacts**, allowing businesses to make **data-driven decisions**. Using **DAX calculations and Time Intelligence functions**, this report delivers **actionable insights** to optimize revenue, discount strategies, and segment profitability.  
 
----
-
-##  Repository Contents
-**Power BI Dashboard File** (`Financial Analysis.pbix`)  
-**Dataset File** (`Financial Sample.xlsx`)  
-**README.md** (This document)  
 ---
 
 ##  Contributing
