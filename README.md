@@ -1,4 +1,4 @@
-# Power BI Financial Analysis Dashboard
+ Power BI Financial Analysis Dashboard
 
 This project provides an **interactive Power BI dashboard** to analyze financial performance, including **sales, profit, orders, and discount trends** across different segments, countries, and products. The dashboard is built using **Power BI** with **DAX calculations** and **Time Intelligence functions** for advanced insights.
 
