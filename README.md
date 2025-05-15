@@ -10,8 +10,8 @@ To ensure data quality and accurate analysis, the following preprocessing steps 
 - ** Data Cleaning:** Transposed data for better visualization, removed unwanted missing rows and columns.
 - ** Data Profiling:** Identified **anomalies, missing values, duplicates, and null values** in Power BI.
 - ** Data Transformation:** Applied **DAX calculations** for financial KPIs and trend analysis.
-  ![![image](https://user-images.githubusercontent.com/97775044/215146486-101d3195-4313-4c29-b88e-b8758d513911.png)
-](https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/Screenshot%202025-03-02%20121231.png)
+
+  (https://github.com/riyareddy07/financial-analysis-powerbi-dashboard/blob/main/Screenshot%202025-03-02%20121231.png)
 
 
 ---
